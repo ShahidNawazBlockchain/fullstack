@@ -3,6 +3,9 @@ import cookieParser from "cookie-parser";
 import cors from "cors";
 
 const app = express();
+app.get("/", (req, res) => {
+  res.send("hello world");
+});
 
 app.use(
   cors({
