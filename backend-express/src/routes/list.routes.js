@@ -14,7 +14,7 @@ router.use(verifyJWT);
 
 // CRUD routes for lists
 router.post("/create", createList); // Create a new list item
-router.get("/create", getAllLists); // Get all tasks for the authenticated user
+router.get("/get", getAllLists); // Get all tasks for the authenticated user
 router.put("/update/:id", updateList); // Update a task for the authenticated user
 router.delete("/delete/:id", deleteList); // Delete a task for the authenticated user
 
